@@ -31,3 +31,17 @@ void Library::checkoutBook(Book &book, Patron &patron)
         }
     }
 }
+
+std::vector<std::string> Library::patronsWithFee()
+{
+    std::vector<std::string> result{};
+
+    for (Patron p : patrons_)
+    {
+        if (p.fee() > 0)
+        {
+            result.push_back(p.username());
+        }
+    }
+    return result;
+}

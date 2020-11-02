@@ -16,6 +16,7 @@ public:
     void addBook(const Book &book);
     void addPatron(const Patron &patron);
     void checkoutBook(Book &book, Patron &patron);
+    std::vector<std::string> patronsWithFee();
 
 private:
     std::vector<Book> books_{};

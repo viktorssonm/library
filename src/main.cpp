@@ -26,7 +26,10 @@ int main()
     lib.addPatron(p1);
     lib.addPatron(p2);
     lib.addPatron(p3);
+    lib.addPatron(p4);
+    lib.addPatron(p5);
     lib.checkoutBook(b1, p1);
+    std::vector<std::string> patronsWithFee = lib.patronsWithFee();
 
     return 0;
 }
