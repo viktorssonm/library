@@ -9,6 +9,7 @@ public:
     int libraryCardNumber() const { return libraryCardNumber_; };
     int fee() const { return fee_; };
     void setFee(int fee);
+    friend bool operator==(const Patron &lhs, const Patron &rhs) { return lhs.userName_ == rhs.userName_; };
 
 private:
     const std::string userName_;

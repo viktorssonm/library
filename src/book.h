@@ -30,6 +30,7 @@ public:
     std::string title() const { return title_; };
     std::string author() const { return author_; };
     std::string copyright_Date() const { return copyright_date_; };
+    bool isCheckedOut() const { return isCheckedOut_; };
     Genre genre() const { return genre_; };
     void checkInBook();
     void checkOutBook();
