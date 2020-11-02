@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include(CTest)
 enable_testing()
 include_directories(${CMAKE_SOURCE_DIR}/src)
-add_executable(Library src/main.cpp src/book.h src/book.cpp)
+add_executable(Library src/main.cpp src/book.h src/book.cpp src/patron.h src/patron.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
