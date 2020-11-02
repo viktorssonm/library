@@ -5,9 +5,9 @@ class Patron
 {
 public:
     Patron(std::string username, int libraryCardNumber) : userName_(username), libraryCardNumber_(libraryCardNumber){};
-    std::string username() { return userName_; };
-    int libraryCardNumber() { return libraryCardNumber_; };
-    int fee() { return fee_; };
+    std::string username() const { return userName_; };
+    int libraryCardNumber() const { return libraryCardNumber_; };
+    int fee() const { return fee_; };
     void setFee(int fee);
 
 private:
@@ -15,3 +15,5 @@ private:
     const int libraryCardNumber_;
     int fee_{0};
 };
+
+bool owesFee(Patron patron);
